@@ -1,0 +1,16 @@
+<%= form_tag fortunes_path, :method => :get, :id => "fortunes_search" do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>
+<br/>
+<div id="fortunes">
+  <%= render :partial => 'fortune', :collection => @fortunes %>
+</div>
+
+
+<%= paginate @fortunes %>
+
+
+<p><%= link_to "New Fortune", new_fortune_path %></p>

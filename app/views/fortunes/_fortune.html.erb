@@ -1,0 +1,8 @@
+<p>
+ <b><%= fortune.body %></b><br><%= fortune.author %>
+</p>
+<p class="links">
+ <%= link_to "Show", fortune_path(fortune) %> |
+ <%= link_to "Edit", edit_fortune_path(fortune) %> |
+ <%= link_to 'Destroy', fortune, :confirm => t('helpers.data.sure'), :method => :delete %>
+</p>
