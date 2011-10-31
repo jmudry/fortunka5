@@ -10,6 +10,7 @@ gem 'execjs'
 gem 'kaminari'
 gem 'therubyracer'
 gem "simple_form"
+gem 'omniauth'
 
 
 # Gems used only for assets and not required
