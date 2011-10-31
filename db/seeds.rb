@@ -9,6 +9,6 @@ Fortune.delete_all
 require Rails.root.join('db', 'faker_pl')
 
 Fortune.populate(100..200 ) do |fortune |
-  fortune.body = Populator.sentences(1..2)
+  fortune.body = Populator.sentences(1)
   fortune.author =  Faker::Name.first_name + " " + Faker::Name.last_name
 end

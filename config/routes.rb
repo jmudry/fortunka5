@@ -1,5 +1,12 @@
 Fortunka5::Application.routes.draw do
-  resources :fortunes
+
+
+  resources :fortunes do
+  resources :comments
+end
+
+
+
   root :to => "fortunes#index"
 
   # The priority is based upon order of creation:

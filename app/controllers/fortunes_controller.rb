@@ -1,4 +1,6 @@
 class FortunesController < ApplicationController
+  respond_to :html, :json
+
   # GET /fortunes
   # GET /fortunes.json
   def index
@@ -14,22 +16,14 @@ class FortunesController < ApplicationController
   # GET /fortunes/1.json
   def show
     @fortune = Fortune.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @fortune }
-    end
+    @comment = Comment.new
+     respond_with(@fortune)
   end
 
   # GET /fortunes/new
   # GET /fortunes/new.json
   def new
     @fortune = Fortune.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @fortune }
-    end
   end
 
   # GET /fortunes/1/edit
