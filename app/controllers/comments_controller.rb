@@ -14,7 +14,7 @@ class CommentsController < ApplicationController
   def destroy
     @comment = @fortune.comments.find(params[:id])
     @comment.destroy
-    respond_with(@fortune, @comment, :location => @fortune)
+     respond_with(@fortune, @comment, :location => @fortune)
   end
 
   def edit
