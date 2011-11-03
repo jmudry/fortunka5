@@ -74,3 +74,39 @@ div.input {
 input[type="text"], textarea {
   font: inherit;
 }
+
+
+#fortunes p.body{
+      margin-top: 10px;
+
+
+}
+
+
+#fortunes p.author{
+      margin-top: 0px;
+      text-align: right;
+      font-style:italic;
+      font-size: medium;
+      margin-top: -10px;
+    }
+
+ .fortune{
+     border-bottom: solid 2px $html-background-color;
+     margin-bottom: 25px;
+     margin-top: 10px;
+    }
+
+.links{
+  position:relative;
+  float:left;
+
+
+}
+
+.ajaxful-rating-wrapper{
+
+
+
+}
+

@@ -1,8 +1,13 @@
-<p>
- <b><%= fortune.body %></b><br><%= fortune.author %>
-</p>
-<p class="links">
+<div class="fortune">
+  <%= ratings_for fortune, :static %>
+
+ <p class="body"><b><%= fortune.body %></b><p>
+  <div class="links">
  <%= link_to "Show", fortune_path(fortune) %> |
  <%= link_to "Edit", edit_fortune_path(fortune) %> |
  <%= link_to 'Destroy', fortune, :confirm => t('helpers.data.sure'), :method => :delete %>
-</p>
+</div>
+ <p class="author"><%= fortune.author %></p>
+</div>
+
+

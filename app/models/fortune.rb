@@ -1,7 +1,7 @@
 class Fortune < ActiveRecord::Base
   has_many :comments, :dependent => :destroy
-
-   paginates_per 10
+  ajaxful_rateable :stars => 5,:allow_update => true, :dimensions => [:body]
+  paginates_per 10
   validates :body, :presence => true
   # validates_presence_of :body
   validates_length_of :body, :in => 2..255

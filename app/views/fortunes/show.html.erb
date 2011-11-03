@@ -10,6 +10,8 @@
   <%= @fortune.author %>
 </p>
 
+<%= ratings_for @fortune, current_user, :show_user_rating => true, :remote => true  %>
+
 <% if @fortune.comments.any? %>
   <h2>Comments</h2>
   <%= render :partial => 'comments/comment', :collection => @fortune.comments %>

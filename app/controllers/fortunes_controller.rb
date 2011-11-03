@@ -74,4 +74,17 @@ class FortunesController < ApplicationController
       format.json { head :ok }
     end
   end
+
+
+
+   def rate
+    @fortune = Fortune.find(params[:id])
+    @fortune.rate(params[:stars], current_user,params[:dimension])
+    respond_to do |format|
+        format.js { render :partial => "rating" }
+    end
+
+  end
+
+
 end

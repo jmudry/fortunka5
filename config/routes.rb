@@ -1,8 +1,15 @@
 Fortunka5::Application.routes.draw do
 
+resources :fortunes do
+  member do
+    post :rate
+  end
+end
+
+
 
   resources :fortunes do
-  resources :comments
+    resources :comments
 end
 
   match "/auth/:provider/callback" => "sessions#create"
@@ -66,4 +73,6 @@ end
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
+
+
 end

@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  ajaxful_rater
 
 def self.create_with_omniauth(auth)
   create! do |user|

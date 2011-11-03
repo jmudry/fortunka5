@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/edgarjs/ajaxful-rating.git
+  revision: 98452cea5145824d528a6fd21024097741fe7b26
+  branch: rails3
+  specs:
+    ajaxful_rating (3.0.0.beta6)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -198,6 +205,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  ajaxful_rating!
   bourbon
   coffee-rails (~> 3.1.1)
   coffee-script
