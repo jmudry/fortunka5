@@ -20,7 +20,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
-
+   <%= stylesheet_link_tag "scaffolds" %>
   <%= stylesheet_link_tag "application" %>
   <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" %>
   <%= ajaxful_rating_style %>
@@ -38,6 +38,7 @@
 
 <body>
   <header>
+
      <%= content_tag :h1, "Fortunka" %>
     <% if current_user %>
       Welcome <%= current_user.name %>!

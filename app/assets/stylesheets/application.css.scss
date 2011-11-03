@@ -61,10 +61,11 @@
 	cursor:default;
   }
 
-  div.input, input, textarea, label {
+div.input, input, textarea, label {
   float: left;
 
 }
+
 div.input {
   width: 100%;
   margin-top:5px;
@@ -77,13 +78,11 @@ input[type="text"], textarea {
 
 
 #fortunes p.body{
-      margin-top: 10px;
-
-
+      margin-top: 0px;
 }
 
 
-#fortunes p.author{
+p.author{
       margin-top: 0px;
       text-align: right;
       font-style:italic;
@@ -91,22 +90,54 @@ input[type="text"], textarea {
       margin-top: -10px;
     }
 
- .fortune{
+#fortunes .fortune{
      border-bottom: solid 2px $html-background-color;
      margin-bottom: 25px;
      margin-top: 10px;
     }
 
-.links{
-  position:relative;
-  float:left;
+span.error{
+    color: red;
+    disply:block;
+}
 
+.hint{
+    disply:block;
+}
+
+h1,h2 {
+     font-variant:small-caps;
+     text-shadow: 2px 2px 5px $html-background-color;
+}
+
+#commentBox{
+     padding: 10px 10px 5px 10px;
+     @include box-shadow(1px 1px 2px 0 darken($html-background-color, 32%));
+     p.l{
+         text-align: right;
+         margin-top: -10px;
+         margin-bottom: 5px;
+         display:block;
+     }
+}
+
+.links a{
+     padding:3px;
+     text-decoration: none;
+     font-size: small;
+
+     @include border-radius(4px);
+     background-color:#F5F5F5;
+	color:#0072bc;
+}
+
+.links a:hover{
+    background-color:#DDEEFF;
+	color:#0072BC;
 
 }
 
-.ajaxful-rating-wrapper{
-
-
-
+.date{
+    font-size:x-small;
+    margin-botton:0px;
 }
-

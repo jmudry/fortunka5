@@ -1,14 +1,12 @@
+
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Body:</b>
   <%= @fortune.body %>
 </p>
 
-<p>
-  <b>Author:</b>
-  <%= @fortune.author %>
-</p>
+   <p class="author"><b>Author: </b><%= @fortune.author %></p>
+
 
 <%= ratings_for @fortune, current_user, :show_user_rating => true, :remote => true  %>
 
@@ -16,12 +14,12 @@
   <h2>Comments</h2>
   <%= render :partial => 'comments/comment', :collection => @fortune.comments %>
 <% end %>
-<br/>
 
 <h2>Add new comment</h2>
-<%= render :partial => 'comments/form' %>
-
-
-
+<p><%= render :partial => 'comments/form' %>   </p>
+<p >
+ <div class="links">
 <%= link_to 'Edit', edit_fortune_path(@fortune) %> |
 <%= link_to 'Back', fortunes_path %>
+ </div>
+ </p>

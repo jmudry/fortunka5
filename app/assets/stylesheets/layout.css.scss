@@ -12,14 +12,16 @@ body {
   font-size: medium;
   line-height: 1.5;
 }
-// width 600px approx. 60 characters per line
+
 div[role="main"] {
   width: 800px;
   margin: 0 auto 18px;
   padding: 2px 18px 18px 18px;
   background: white;
+  @include border-radius(10px);
 }
 header {
+  @include border-radius(10px);
   width: 800px;
   margin: 0 auto;
   padding: 18px;
@@ -28,4 +30,11 @@ header {
   h1 {
     font-size: 140%;
   }
+  a:link, a:visited ,a:active{
+  color: green;
+  }
+  a:hover{
+  color: $html-background-color;
+  }
+
 }

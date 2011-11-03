@@ -6,6 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Fortune.delete_all
+Fortune.delete_all
+Rate.delete_all
 require Rails.root.join('db', 'faker_pl')
 
 Fortune.populate(100..200 ) do |fortune |

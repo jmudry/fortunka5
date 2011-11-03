@@ -3,9 +3,9 @@
 
  <p class="body"><b><%= fortune.body %></b><p>
   <div class="links">
- <%= link_to "Show", fortune_path(fortune) %> |
- <%= link_to "Edit", edit_fortune_path(fortune) %> |
- <%= link_to 'Destroy', fortune, :confirm => t('helpers.data.sure'), :method => :delete %>
+     <%= link_to "Show", fortune_path(fortune) %> |
+     <%= link_to "Edit", edit_fortune_path(fortune) %> |
+     <%= link_to 'Destroy', fortune, :confirm => t('helpers.data.sure'), :method => :delete %>
 </div>
  <p class="author"><%= fortune.author %></p>
 </div>

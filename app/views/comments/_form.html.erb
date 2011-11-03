@@ -1,5 +1,5 @@
 <%= simple_form_for [@fortune, @comment] do |f| %>
-  <%= f.input :author, :input_html => {:size => 40} %>
-  <%= f.input :body, :input_html => {:rows => 4, :cols => 40} %>
+  <%= f.input :body, :as => :text, :input_html => {:rows => 2, :cols => 72}, :label => '' %>
+  <%= f.input :author, :input_html => {:size => 15}, :label => 'Author: '%>
   <%= f.button :submit %>
 <% end %>

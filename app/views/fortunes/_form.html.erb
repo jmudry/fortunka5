@@ -1,25 +1,5 @@
-<%= form_for(@fortune) do |f| %>
-  <% if @fortune.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@fortune.errors.count, "error") %> prohibited this fortune from being saved:</h2>
-
-      <ul>
-      <% @fortune.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :body %><br />
-    <%= f.text_area :body %>
-  </div>
-  <div class="field">
-    <%= f.label :author %><br />
-    <%= f.text_field :author %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+<%= simple_form_for [@fortune] do |f| %>
+  <%= f.input :body, :input_html => {:rows => 4, :cols => 40} %>
+  <%= f.input :author, :input_html => {:size => 25} ,  :required => false %>
+  <%= f.button :submit %>
 <% end %>
