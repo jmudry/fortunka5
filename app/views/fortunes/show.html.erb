@@ -1,14 +1,11 @@
 
 <p id="notice"><%= notice %></p>
 
-<p>
-  <%= @fortune.body %>
-</p>
+<p><%= @fortune.body %> </p>
 
-   <p class="author"><b>Author: </b><%= @fortune.author %></p>
+<p class="author"><b>Author: </b><%= @fortune.author %></p>
 
-
-<%= ratings_for @fortune, current_user, :show_user_rating => true, :remote => true  %>
+<%= ratings_for @fortune, :remote => true  %>
 
 <% if @fortune.comments.any? %>
   <h2>Comments</h2>
@@ -16,10 +13,10 @@
 <% end %>
 
 <h2>Add new comment</h2>
-<p><%= render :partial => 'comments/form' %>   </p>
+<p><%= render :partial => 'comments/form' %></p>
 <p >
- <div class="links">
-<%= link_to 'Edit', edit_fortune_path(@fortune) %> |
-<%= link_to 'Back', fortunes_path %>
- </div>
- </p>
+    <div class="links">
+        <%= link_to 'Edit', edit_fortune_path(@fortune) %> |
+        <%= link_to 'Back', fortunes_path %>
+    </div>
+</p>

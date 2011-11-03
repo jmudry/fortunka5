@@ -94,6 +94,11 @@ p.author{
      border-bottom: solid 2px $html-background-color;
      margin-bottom: 25px;
      margin-top: 10px;
+     .comments{
+        float:left;
+        font-size:small;
+        text-decoration:none;
+     }
     }
 
 span.error{
@@ -119,6 +124,11 @@ h1,h2 {
          margin-bottom: 5px;
          display:block;
      }
+     .date{
+        font-size:x-small;
+        margin-botton:0px;
+        float:left;
+     }
 }
 
 .links a{
@@ -137,7 +147,3 @@ h1,h2 {
 
 }
 
-.date{
-    font-size:x-small;
-    margin-botton:0px;
-}
