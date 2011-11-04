@@ -5,6 +5,7 @@
 
 <p class="author"><b>Author: </b><%= @fortune.author %></p>
 
+
 <%= ratings_for @fortune, :remote => true  %>
 
 <% if @fortune.comments.any? %>
