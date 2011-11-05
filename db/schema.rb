@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(:version => 20111101210017) do
   create_table "comments", :force => true do |t|
     t.string   "fortune_id"
     t.string   "author"
-    t.string   "body"
+    t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

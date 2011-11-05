@@ -80,9 +80,7 @@ class FortunesController < ApplicationController
    def rate
     @fortune = Fortune.find(params[:id])
     @fortune.rate(params[:stars], current_user,params[:dimension])
-    respond_to do |format|
-        format.js { render :partial => "rating" }
-    end
+   respond_with(@fortune)
 
   end
 
