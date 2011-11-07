@@ -39,9 +39,7 @@
     background-position: left bottom;
 }
 
-/* This section is generated dynamically.
-Just add a call to the helper method 'ajaxful_rating_style' within
-the head tags in your main layout
+
 .ajaxful-rating .stars-1{
 width: 20%;
 z-index: 6;
@@ -62,7 +60,7 @@ z-index: 3;
 width: 100%;
 z-index: 2;
 }
-*/
+
 .ajaxful-rating .show-value{
     z-index: 1;
     background-position: left center;

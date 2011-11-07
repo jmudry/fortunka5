@@ -31,9 +31,10 @@
                       show_user_rating: $(this).attr('data-show_user_rating')
                     },
               success: function(response){
-                $('#' + response.id + ' .show-value').css('width', response.width + '%');
+                  $('#' + "ajaxful_rating_no-small_fortune_" + response.id + ' .show-value').css('width', response.width + '%');
               }
             });
             return false;
           });
+
         });

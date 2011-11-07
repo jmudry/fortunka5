@@ -75,12 +75,11 @@ class FortunesController < ApplicationController
     end
   end
 
-
-
    def rate
     @fortune = Fortune.find(params[:id])
     @fortune.rate(params[:stars], current_user,params[:dimension])
-   respond_with(@fortune)
+
+     render :json => { id: @fortune.id , width: (@fortune.rate_average/5)*100}
 
   end
 
