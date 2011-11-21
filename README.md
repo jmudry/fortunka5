@@ -3,7 +3,7 @@ Jest to aplikacja na zaliczenie laboratorium z Architektury serwisów internetow
 
 Standardowa fortunka.
 
-Została ona rozszerzona o:
+Została ona rozszerzona o: \n
 a) Ajax rating dla fortunek dzieki gemowi: ajaxful_rating 
 b) autentykacje z twitterem - dzięki czemu każdy zalogowany urzytkownik może oceniać fortunki
 c) system komentarzy
